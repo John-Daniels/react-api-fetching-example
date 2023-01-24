@@ -16,17 +16,11 @@ const Dashboard = () => {
   }, []);
 
   const fetchUserData = async () => {
-    //   setLoading(true);
     try {
       const { data } = await makeRequest.get("/");
 
       setUserData(data.results[0]);
-    } catch (e) {
-    } finally {
-      //       setTimeout(() => {
-      //         // setLoading(false);
-      //       }, 2000);
-    }
+    } catch (e) {}
   };
 
   return (
