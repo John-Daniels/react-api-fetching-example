@@ -60,7 +60,7 @@ const Dashboard = () => {
               <p className="capitalize">{userData?.gender}</p>
               <p>{moment(userData?.dob?.date).format("MMM Do,  YYYY")}</p>
               <p>{userData?.dob?.age} years old</p>
-              <p>{userData?.email}</p>
+              <p className="w-[60%] sm:w-fit truncate">{userData?.email}</p>
               <p>{userData?.phone}</p>
             </div>
           </div>
